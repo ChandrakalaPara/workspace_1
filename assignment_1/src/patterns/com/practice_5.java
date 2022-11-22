@@ -66,7 +66,7 @@ public class practice_5 {
 				for(int j=0; j<=1.5*n;j++)
 				   {
 					   
-					   if  (j==0 || (i==(n-1) && j<=n ||j==n) ) 
+					   if  (j==0 || (i==(n-1)&& j!=0) && j<=n ||j==n ) 
 					   {
 					   
 					       System.out.print("*");
@@ -82,7 +82,7 @@ public class practice_5 {
 				for(int j=0; j<=1.5*n;j++)
 				   {
 					   
-					   if  (i==0 && j<=n || j==0 || (j==n && i<n/2)||i==(n-1)/2 && j<=n || (i-j)==(n-1)/2 ) 
+					   if  (i==0 && j<=n || j==0 || (j==n && i<n/2)||i==(n-1)/2 && j<=n || i>=n/2 && i==j  ) 
 					   {
 					   
 					       System.out.print("*");

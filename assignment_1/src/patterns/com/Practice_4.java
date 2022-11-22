@@ -13,7 +13,7 @@ public class Practice_4 {
 				
 			  for(int j=0; j<n; j++) 
 			  {
-				 if(i==0 || i==(n-1)|| j==0 || i+j<=(n-1)/2 || (i-j)>=(n-1)/2 ) {
+				 if(i==0 && j<=n || i==(n-1)|| j==0 || i+j<=(n-1)/2 || (i-j)>=(n-1)/2 ) {
 				  
 		                System.out.print("*");
 		         }
