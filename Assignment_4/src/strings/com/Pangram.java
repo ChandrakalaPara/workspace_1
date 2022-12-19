@@ -6,26 +6,38 @@ public class Pangram {
 		// TODO Auto-generated method stub
 		
 		
-        String s ="The quick brown fox jumps over the lazy dog";
+String s1= "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
 		
-		s=s.toLowerCase();
-		s=s.replace(" ","");
-		int n=s.length();
-		char[] array = new char[25]; 
+		s1 = s1.replace(" ","");
+		boolean ineuron = true;
 		
-		for(int i=0; i<n;i++) {
+		char [] ch= s1.toCharArray();
 		
-		     i=122-s.charAt(i);
-		     
-		     System.out.println(n);
+		int[] ar=new int[26];
+		
+		for(int i=0; i<ch.length;i++) {
 			
-			System.out.println("the given string is not a pangram" + (int)s.charAt(i));
-          
+			int index =ch[i]-65;
+			ar[index]++;
 			
 		}
 		
-		
-		
+	    for (int i=0; i<ar.length;i++)
+	    {
+	    	
+	    	if(ar[i]==0) {
+	    	
+	    		System.out.println("It's not pangram");
+	    		
+	    		ineuron=false;
+	    	}
+	    }	
+	    if (ineuron==true) {
+	    	
+	    	System.out.println("It's pangram");
+	    	
+	    }
+			
 		
 
 	}
